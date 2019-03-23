@@ -1,0 +1,37 @@
+{
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 3,
+        "max_score": 1,
+        "hits": [
+            {
+                "_index": "index001",
+                "_type": "type001",
+                "_id": "2",
+                "_score": 1,
+                "_source": {}
+            },
+            {
+                "_index": "index001",
+                "_type": "type001",
+                "_id": "1",
+                "_score": 1,
+                "_source": {}
+            },
+            {
+                "_index": "index001",
+                "_type": "type001",
+                "_id": "3",
+                "_score": 1,
+                "_source": {}
+            }
+        ]
+    }
+}

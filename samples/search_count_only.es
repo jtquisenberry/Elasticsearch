@@ -1,4 +1,3 @@
-// Basic search with source filtering
 GET /index001/type001/_search
 {
     "query": {
@@ -8,6 +7,7 @@ GET /index001/type001/_search
         "user",
         "post_date",
         "text"
-    ]    
+    ],
+    "size":0
 }
 
