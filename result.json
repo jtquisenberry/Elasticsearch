@@ -1,0 +1,31 @@
+{
+    "index001": {
+        "mappings": {
+            "type001": {
+                "properties": {
+                    "post_date": {
+                        "type": "date"
+                    },
+                    "text": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "user": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
