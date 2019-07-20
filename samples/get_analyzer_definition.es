@@ -1,6 +1,6 @@
 //What is "analyzer": "nuix_natural_language_analyser"
 
-GET _indexid_;item;schema-version=1/_settings/
+GET index001/_settings/
 
 /* Result:
 

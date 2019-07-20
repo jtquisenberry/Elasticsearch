@@ -1,6 +1,9 @@
+/******************************
 Regular Expression Plus Term
+*******************************/
 
-GET _indexid_;item;schema-version=1/_search
+
+GET index001/_search
 {
     "query": {
         "bool": {

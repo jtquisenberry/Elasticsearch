@@ -1,14 +1,21 @@
 /* 
 Change Analyzer on Field "content" to "keyword"
 
-You cannot change the mapping (including the analyzer) of an existing field. What you need to do if you want to change the mapping of existing documents is reindex those documents to another index with the updated mapping.
+You cannot change the mapping (including the analyzer) of an existing field. 
+What you need to do if you want to change the mapping of existing documents 
+is reindex those documents to another index with the updated mapping.
 
-So, first create a new index, which you create with the new mapping. Then use the reindex API to get all documents from the old index A into the new index B. As those documents get reindexed, they will get the updated mapping applied to them. More info about the reindex API here: https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html 196
+So, first create a new index, which you create with the new mapping. Then 
+use the reindex API to get all documents from the old index A into the new 
+index B. As those documents get reindexed, they will get the updated mapping 
+applied to them. More info about the reindex API here: 
+https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html
 
 https://discuss.elastic.co/t/change-analyzer-of-specific-property/99012
 */
 
-PUT _indexid_;item;schema-version=1/_mapping/docs
+
+PUT indexAAA/_mapping/docs
 {
     "properties": {
         "content": {

@@ -1,3 +1,4 @@
+
 //Cannot Search for Phrase with Regular Expression
 
 /*
@@ -9,7 +10,7 @@ As with Nuix regex searches, a regular expression must match a term, not a phras
 Perhaps this behavior can be changed with indexing options.
 */ 
 
-GET _indexid_;item;schema-version=1/_search
+GET index001/_search
 {
     "query": {
         "bool": {

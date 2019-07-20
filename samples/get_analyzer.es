@@ -1,16 +1,16 @@
 // Determine Current Analyzer
 
-GET _indexid_;item;schema-version=1/_mapping/_all
+GET index001/_mapping/_all
 
 // or
 
-GET _indexid_;item;schema-version=1/_mapping/docs/field/content
+GET index001/_mapping/docs/field/content
 
 /*
 Result:
 
 {
-  "_indexid_;item;schema-version=1": {
+  "index001": {
     "mappings": {
       "docs": {
         "content": {

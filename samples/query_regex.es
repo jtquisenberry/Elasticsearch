@@ -1,6 +1,8 @@
-//Match a Single Word
+/*********************
+Query regex
+**********************/
 
-GET _indexid_;item;schema-version=1/_search
+GET index001/_search
 {
     "query": {
         "regexp": {

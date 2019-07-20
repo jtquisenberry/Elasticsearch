@@ -1,3 +1,4 @@
+
 GET /index001/type001/_search
 {
     "query": {
@@ -8,6 +9,7 @@ GET /index001/type001/_search
         "post_date",
         "text"
     ],
-    "size":0
+    "size": 0
 }
 
+ 

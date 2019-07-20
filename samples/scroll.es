@@ -1,9 +1,11 @@
 // Run scroll
 POST index001/_search?scroll=1m
 {
-    "query": {"match_all":{}},
+    "query": {
+        "match_all": {}
+    },
     "size": 1
-} 
+}
 
 // Get next chunk
 POST /_search/scroll 
