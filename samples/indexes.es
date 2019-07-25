@@ -15,3 +15,8 @@ Refresh index for searching
 *****************************/
 POST /index001/_refresh
 
+/***************************
+Get index settings
+****************************/
+GET index001/_settings
+

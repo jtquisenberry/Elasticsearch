@@ -1,0 +1,10 @@
+curl -X GET "http://nvsdevnexap01:9200/_cat/indices?v"
+
+curl -X GET "http://nvsdevnexap01:9200/nuix-7674bc4a60b74ea7bac8996a98b0cb94*/_search?q=user:kimchy"
+
+curl -X GET "http://nvsdevnexap01:9200/nuix-7674bc4a60b74ea7bac8996a98b0cb94;item;schema-version=1/_search?q=user:kimchy"
+
+When submitting a JSON body, it is necessary to specify Content-Type and to adjust quotes for Windows.
+
+
+curl -XGET "http://10.30.124.28:9200/nuix-7674bc4a60b74ea7bac8996a98b0cb94;item;schema-version=1/_search" -H "Content-Type: application/json" -d "{\"query\": {\"regexp\": {\"content\": \"(p)hotos\"}}}"

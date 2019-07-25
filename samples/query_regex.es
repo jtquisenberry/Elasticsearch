@@ -6,12 +6,22 @@ GET index001/_search
 {
     "query": {
         "regexp": {
-            "content": "(p|x)hotos"
+            "user": "(j|z)acob"
         }
     },
     "_source": [
-        "guid",
-        "flag",
-        "content"
+        "user",
+        "post_date",
+        "text"
     ]
+}
+
+
+GET index001/_search
+{
+    "query": {
+        "regexp": {
+            "user": ".*aco.*"
+        }
+    }
 }

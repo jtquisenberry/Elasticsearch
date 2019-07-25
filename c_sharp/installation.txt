@@ -1,0 +1,5 @@
+	• C#: Elasticsearch.NET
+	
+	Installed with 
+	
+	PM> Install-Package Elasticsearch.Net
