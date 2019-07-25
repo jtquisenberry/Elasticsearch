@@ -2,6 +2,11 @@
 Nested aggregation
 *************************************/
 
+/*
+https://www.elastic.co/guide/en/elasticsearch/reference/5.5/search-aggregations.html#_structuring_aggregations
+*/
+
+
 GET _index_id_;item;schema-version=1\_search
 {
   "size": 0,
