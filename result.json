@@ -1,22 +1,27 @@
 {
-    "index001": {
-        "mappings": {
-            "type001": {
-                "user": {
-                    "full_name": "user",
-                    "mapping": {
-                        "user": {
-                            "type": "text",
-                            "fields": {
-                                "keyword": {
-                                    "type": "keyword",
-                                    "ignore_above": 256
-                                }
-                            }
-                        }
-                    }
+    "took": 1047,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 3,
+        "max_score": 0,
+        "hits": []
+    },
+    "aggregations": {
+        "typesAgg": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+                {
+                    "key": "type001",
+                    "doc_count": 3
                 }
-            }
+            ]
         }
     }
 }
